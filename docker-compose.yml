@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+    spring:
+        image: "spring"
+        build:          
+            context: ./spring/my_spring_api/
+            dockerfile: ./Dockerfile
+        ports: 
+            - "8080:8080"
+    express:
+        image: "express"
+        build:
+            context: ./express/myapi/
+            dockerfile: ./Dockerfile
+        ports: 
+            - "3200:3200"
+    react:
+        image: "react"
+        build:
+            context: ./react/my-app
+            dockerfile: ./Dockerfile
+        ports:
+            - "3000:3000"
+    angular:
+        image: "angular"
+        build:
+            context: ./angular/my-app-ng
+            dockerfile: ./Dockerfile
+        ports:
+            - "3300:3300"

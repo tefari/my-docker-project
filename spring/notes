@@ -1,0 +1,5 @@
+mvn spring-boot:run
+
+ docker build -t my_spring_api/docker-normal-build-demo:1.0-SNAPSHOT .
+
+ docker run -d  my_spring_api/docker-normal-build-demo:1.0-SNAPSHOT

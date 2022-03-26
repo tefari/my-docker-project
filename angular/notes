@@ -1,0 +1,17 @@
+npx -p @angular/cli ng new my-ng-project
+
+
+npx ng g c hello-world-component
+
+
+npm install -g @angular/cli
+
+ng new my-app-ng
+
+
+
+for docker
+
+docker build -t my-app-ng .
+
+docker run -d -p 3300:3300 my-app-ng

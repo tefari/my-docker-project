@@ -1,0 +1,5 @@
+npx express-generator
+express --view=pug myapi
+
+
+docker build . -t myapi/node-web-app
