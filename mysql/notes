@@ -1,0 +1,3 @@
+docker build -t mysqldb .
+
+docker run -d -p 3600:3600 mysqldb 
